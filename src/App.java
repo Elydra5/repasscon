@@ -21,7 +21,7 @@ public class App {
             String password = getInput(scanner, "Jelszó: ");
             String location = getInput(scanner, "Hely: ");
 
-            Store passList = new Store(password, username, location);
+            Store passList = new Store(username, password, location);
             boolean isSuccess = writeToFile("pass.txt", passList);
 
             if (isSuccess) {
